@@ -38,7 +38,7 @@ public class Day17GUIAssignment {
 		boolean isValidName = true;
 		
 		// if name is empty or don't follow the validation
-		if(name.isEmpty() || !name.matches("^[a-zA-Z\s]+$")) {			
+		if(name.isBlank() || !name.matches("^[a-zA-Z\s]+$")) {			
 			isValidName = false;
 		}
 		
@@ -55,7 +55,7 @@ public class Day17GUIAssignment {
 		boolean isValidEmail = true;
 		
 		// if email is empty or don't follow the validation
-		if(email.isEmpty() || !email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {			
+		if(email.isBlank() || !email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {			
 			isValidEmail = false;
 		}
 			
@@ -72,7 +72,7 @@ public class Day17GUIAssignment {
 		boolean isValidPhone = true;
 		
 		// if phone is empty or don't follow the validation
-		if(phone.isEmpty() || !phone.matches("^[6-9]\\d{9}$")) {			
+		if(phone.isBlank() || !phone.matches("^[6-9]\\d{9}$")) {			
 			isValidPhone = false;
 		}
 			
@@ -108,7 +108,7 @@ public class Day17GUIAssignment {
 		emailField = new JTextField();
 		frame.add(emailField);
 		
-		// add email inside the JFrame
+		// add phone inside the JFrame
 		frame.add(new JLabel("Phone:"));
 		phoneField = new JTextField();
 		frame.add(phoneField);
